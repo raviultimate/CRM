@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="49e1c165472a21102908cde3836d437f" label="Account" max_length="40" name="x_snc_crm_applic_1_account" text_index="true" type="collection">
+        <element label="Lead" max_length="32" name="lead" reference="x_snc_crm_applic_1_leads" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Opportunity" max_length="32" name="opportunity" reference="x_snc_crm_applic_1_opportunity" type="reference"/>
+        <index name="index">
+            <element name="lead"/>
+        </index>
+        <index name="index2">
+            <element name="opportunity"/>
+        </index>
+    </element>
+</database>

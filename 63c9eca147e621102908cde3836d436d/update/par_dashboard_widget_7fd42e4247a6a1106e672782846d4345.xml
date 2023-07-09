@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">4f54fc7116e2611094c48e14a3d20a8c</canvas>
+        <component display_value="now-heading">3a64f550256090d9578ede76158e899c</component>
+        <component_props>{"variant":"header-tertiary","label":"All Courses","wontWrap":false,"hasNoMargin":false,"level":"1"}</component_props>
+        <h>3</h>
+        <name/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-03 11:50:32</sys_created_on>
+        <sys_id>7fd42e4247a6a1106e672782846d4345</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>par_dashboard_widget_7fd42e4247a6a1106e672782846d4345</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-03 11:51:29</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <x>0</x>
+        <y>25</y>
+    </par_dashboard_widget>
+</record_update>

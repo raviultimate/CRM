@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="29ab73f047b6e9106e672782846d4301" sys_domain="global" table="x_snc_crm_applic_1_products" version="3" view="workspace-nextgencrm-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>citizendev</sys_created_by>
+            <sys_created_on>2023-05-12 07:12:57</sys_created_on>
+            <sys_id>29ab73f047b6e9106e672782846d4302</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_products" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">29ab73f047b6e9106e672782846d4301</sys_ui_section>
+            <sys_updated_by>citizendev</sys_updated_by>
+            <sys_updated_on>2023-05-12 07:12:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_crm_applic_1_products</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>citizendev</sys_created_by>
+            <sys_created_on>2023-05-12 07:12:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>29ab73f047b6e9106e672782846d4301</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_crm_applic_1_products</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+            <sys_update_name>sys_ui_section_29ab73f047b6e9106e672782846d4301</sys_update_name>
+            <sys_updated_by>citizendev</sys_updated_by>
+            <sys_updated_on>2023-05-12 07:12:57</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace NextGenCRM 0" name="workspace-nextgencrm-0">7a9b73f0eeb6e91030233c1d02c2f32e</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CRM Application">63c9eca147e621102908cde3836d436d</application>
+        <file_path/>
+        <instance_id>ac7167dddb2eedd49df22f17d496195d</instance_id>
+        <instance_name>emprmanchikanti2</instance_name>
+        <name>sys_ui_section_29ab73f047b6e9106e672782846d4301</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="29ab73f047b6e9106e672782846d4301" sys_domain="global" table="x_snc_crm_applic_1_products" version="3" view="workspace-nextgencrm-0"><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>citizendev</sys_created_by><sys_created_on>2023-05-12 07:12:57</sys_created_on><sys_id>29ab73f047b6e9106e672782846d4302</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_products" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">29ab73f047b6e9106e672782846d4301</sys_ui_section><sys_updated_by>citizendev</sys_updated_by><sys_updated_on>2023-05-12 07:12:57</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_snc_crm_applic_1_products</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>citizendev</sys_created_by><sys_created_on>2023-05-12 07:12:57</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>29ab73f047b6e9106e672782846d4301</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_crm_applic_1_products</sys_name><sys_overrides/><sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package><sys_policy/><sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope><sys_update_name>sys_ui_section_29ab73f047b6e9106e672782846d4301</sys_update_name><sys_updated_by>citizendev</sys_updated_by><sys_updated_on>2023-05-12 07:12:57</sys_updated_on><sys_user/><title>true</title><view display_value="Workspace NextGenCRM 0" name="workspace-nextgencrm-0">7a9b73f0eeb6e91030233c1d02c2f32e</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1963406012</payload_hash>
+        <record_name>Products</record_name>
+        <reverted_from/>
+        <source>08d9eca147e621102908cde3836d43f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-07-09 12:54:56</sys_created_on>
+        <sys_id>68263b2347372d102908cde3836d43b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1893ab82dd40000001</sys_recorded_at>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-07-09 12:54:56</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>28263b23b9372d10800c2fe22b654ab8</update_guid>
+        <update_guid_history>28263b23b9372d10800c2fe22b654ab8:-1963406012</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-07-09 12:54:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>4052ac81d09d4e9ebe5e40c2f62dcfa4</sys_id>
+        <sys_metadata>29ab73f047b6e9106e672782846d4301</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_crm_applic_1_products</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_parent display_value="Products">6d3970ad47e621102908cde3836d43b6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_scope_delete display_value="">0792609ddad7495c84516a200d8c2561</sys_scope_delete>
+        <sys_update_name>sys_ui_section_29ab73f047b6e9106e672782846d4301</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_29ab73f047b6e9106e672782846d4301">68263b2347372d102908cde3836d43b8</sys_update_version>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-07-09 12:54:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

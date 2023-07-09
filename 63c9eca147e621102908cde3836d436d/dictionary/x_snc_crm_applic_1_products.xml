@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6d3970ad47e621102908cde3836d43b6" label="Products" max_length="40" name="x_snc_crm_applic_1_products" text_index="true" type="collection">
+        <element display="true" label="Course Name" max_length="40" name="course_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Price" max_length="40" name="price" type="string"/>
+    </element>
+</database>

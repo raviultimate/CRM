@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group">
+    <sys_suggestion_reader_group action="INSERT_OR_UPDATE">
+        <click_in_mode>false</click_in_mode>
+        <context_config_id display_value="CRM Application - Workspace Search">5b54fc71b0e261109c7bd6c58f2ba29a</context_config_id>
+        <limit>5</limit>
+        <order>600</order>
+        <section_header>Suggested</section_header>
+        <suggestion_type>Search-based Suggested Results Reader Group for Starter Workspace - Workspace Search</suggestion_type>
+        <sys_class_name>sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 09:00:34</sys_created_on>
+        <sys_id>cf54fc71c6e2611030702251613ab78d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Search-based Suggested Results Reader Group for Starter Workspace - Workspace Search</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>sys_suggestion_reader_group_cf54fc71c6e2611030702251613ab78d</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 09:00:34</sys_updated_on>
+    </sys_suggestion_reader_group>
+</record_update>

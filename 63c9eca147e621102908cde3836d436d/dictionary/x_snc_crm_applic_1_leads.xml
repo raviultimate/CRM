@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="ad667ce947e621102908cde3836d43ee" label="Leads" max_length="40" name="x_snc_crm_applic_1_leads" text_index="true" type="collection">
+        <element label="Created Date" max_length="40" name="created_date" type="glide_date"/>
+        <element label="Email" max_length="40" name="email" type="string"/>
+        <element display="true" label="First Name" max_length="40" name="first_name" type="string"/>
+        <element label="Last Name" max_length="40" name="last_name" type="string"/>
+        <element label="Phone" max_length="40" name="phone" type="string"/>
+        <element choice="3" label="Source" max_length="40" name="source" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="LinkedIn" sequence="0" value="linkedin"/>
+                <element inactive_on_update="false" label="Instagram" sequence="1" value="instagram"/>
+                <element inactive_on_update="false" label="Event" sequence="2" value="event"/>
+            </choice>
+        </element>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Contacted" sequence="1" value="contacted"/>
+                <element inactive_on_update="false" label="Qualified" sequence="2" value="qualified"/>
+                <element inactive_on_update="false" label="Dis Qualified" sequence="3" value="dis_qualified"/>
+            </choice>
+        </element>
+    </element>
+</database>

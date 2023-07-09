@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_tab">
+    <par_dashboard_tab action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <dashboard display_value="CRM Application">0f54fc712be261109661da3cca5dc58a</dashboard>
+        <name>Tab</name>
+        <order>0</order>
+        <sys_class_name>par_dashboard_tab</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 09:00:34</sys_created_on>
+        <sys_id>4b54fc71fae261109a442f7338483597</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tab</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>par_dashboard_tab_4b54fc71fae261109a442f7338483597</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 09:00:34</sys_updated_on>
+    </par_dashboard_tab>
+</record_update>

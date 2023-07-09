@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="72d08125472a21102908cde3836d43aa" extends="task" label="Sales Operation" max_length="40" name="x_snc_crm_applic_1_sales_operation" text_index="true" type="collection">
+        <element label="Lead" max_length="32" name="lead" reference="sys_user" type="reference"/>
+        <element label="Opportunity" max_length="32" name="opportunity" reference="x_snc_crm_applic_1_opportunity" type="reference"/>
+        <element choice="3" label="Payment Type" max_length="40" name="payment_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="EMI" sequence="0" value="emi"/>
+                <element inactive_on_update="false" label="Full Payment" sequence="1" value="full_payment"/>
+                <element inactive_on_update="false" label="Part Payment" sequence="2" value="part_payment"/>
+            </choice>
+        </element>
+        <element label="Product" max_length="32" name="product" reference="x_snc_crm_applic_1_products" type="reference"/>
+    </element>
+</database>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="CRM Application Config">5354fc712de261102b87c9f7c2153f9f</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Incident">74627d354723a1502908cde3836d433a</macroponent>
+        <macroponent_config>{
+  "views" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "selectedTabIndex" : {
+    "type" : "JSON_LITERAL",
+    "value" : 0
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config>
+        <name>tedt</name>
+        <order>100</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition>table=incident</screen_condition>
+        <screen_type display_value="Record">c754fc7118e26110c01b52501e882a94</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>hemanth.kumar@snc</sys_created_by>
+        <sys_created_on>2023-06-21 06:34:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0562bd354723a1502908cde3836d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tedt</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>sys_ux_screen_0562bd354723a1502908cde3836d4385</sys_update_name>
+        <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+        <sys_updated_on>2023-06-21 06:34:17</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=0562bd354723a1502908cde3836d4385"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CRM Application">63c9eca147e621102908cde3836d436d</application>
+        <file_path/>
+        <instance_id>ac7167dddb2eedd49df22f17d496195d</instance_id>
+        <instance_name>emprmanchikanti2</instance_name>
+        <name>sys_ux_screen_0562bd354723a1502908cde3836d4385</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="CRM Application Config">5354fc712de261102b87c9f7c2153f9f</app_config><description/><event_mappings>[ ]</event_mappings><macroponent display_value="Incident">74627d354723a1502908cde3836d433a</macroponent><macroponent_config>{
+  "views" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "selectedTabIndex" : {
+    "type" : "JSON_LITERAL",
+    "value" : 0
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config><name>tedt</name><order>100</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition>table=incident</screen_condition><screen_type display_value="Record">c754fc7118e26110c01b52501e882a94</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>hemanth.kumar@snc</sys_created_by><sys_created_on>2023-06-21 06:34:17</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0562bd354723a1502908cde3836d4385</sys_id><sys_mod_count>0</sys_mod_count><sys_name>tedt</sys_name><sys_overrides/><sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package><sys_policy/><sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope><sys_update_name>sys_ux_screen_0562bd354723a1502908cde3836d4385</sys_update_name><sys_updated_by>hemanth.kumar@snc</sys_updated_by><sys_updated_on>2023-06-21 06:34:17</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=0562bd354723a1502908cde3836d4385"/></record_update>]]></payload>
+        <payload_hash>-224178829</payload_hash>
+        <record_name>tedt</record_name>
+        <reverted_from/>
+        <source>08d9eca147e621102908cde3836d43f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>hemanth.kumar@snc</sys_created_by>
+        <sys_created_on>2023-06-21 06:34:17</sys_created_on>
+        <sys_id>c962bd354723a1502908cde3836d4387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188dca9369f0000001</sys_recorded_at>
+        <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+        <sys_updated_on>2023-06-21 06:34:17</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>0162bd35a723a150504dcc2ddc1bc487</update_guid>
+        <update_guid_history>0162bd35a723a150504dcc2ddc1bc487:-224178829</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>hemanth.kumar@snc</sys_created_by>
+        <sys_created_on>2023-06-21 08:35:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>37f5cd90f8c54a4891978cba3cf3b510</sys_id>
+        <sys_metadata>0562bd354723a1502908cde3836d4385</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tedt</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_scope_delete display_value="">0792609ddad7495c84516a200d8c2561</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_0562bd354723a1502908cde3836d4385</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_0562bd354723a1502908cde3836d4385">c962bd354723a1502908cde3836d4387</sys_update_version>
+        <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+        <sys_updated_on>2023-06-21 08:35:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

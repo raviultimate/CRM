@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_visibility">
+    <par_dashboard_visibility action="INSERT_OR_UPDATE">
+        <dashboard display_value="NextGenCRM">b29b73f05cb6e9101c22cd585d423d31</dashboard>
+        <experience/>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>citizendev</sys_created_by>
+        <sys_created_on>2023-05-12 07:12:46</sys_created_on>
+        <sys_id>b69b73f03bb6e910f3da132514cc4330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>par_dashboard_visibility_b69b73f03bb6e910f3da132514cc4330</sys_update_name>
+        <sys_updated_by>citizendev</sys_updated_by>
+        <sys_updated_on>2023-05-12 07:12:46</sys_updated_on>
+    </par_dashboard_visibility>
+</record_update>

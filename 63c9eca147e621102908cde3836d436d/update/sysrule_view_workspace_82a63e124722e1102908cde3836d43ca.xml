@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_view_workspace">
+    <sysrule_view_workspace action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <default_tab_focus>Details</default_tab_focus>
+        <default_tab_order>true</default_tab_order>
+        <description/>
+        <disable_section_collapse>false</disable_section_collapse>
+        <experience_restricted>true</experience_restricted>
+        <hide_details>false</hide_details>
+        <hide_journal_input_fields>true</hide_journal_input_fields>
+        <hide_section_menu>false</hide_section_menu>
+        <name>Show/Hide Worknotes</name>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sysrule_view_workspace</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-04 07:47:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82a63e124722e1102908cde3836d43ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Show/Hide Worknotes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>sysrule_view_workspace_82a63e124722e1102908cde3836d43ca</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 07:47:18</sys_updated_on>
+        <table>x_snc_crm_applic_1_sales_operation</table>
+        <tabs_order>[{"label":"Details","value":"Details"}]</tabs_order>
+        <view display_value="Workspace CRM Application 0" name="workspace-crm-application-0">8754fc71ffe26110a4aad0d01438ca92</view>
+        <workspace/>
+    </sysrule_view_workspace>
+</record_update>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related action="DELETE" sys_domain="global" table="x_snc_crm_applic_1_leads" version="2" view="workspace-nextgencrm-0">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Leads - Workspace NextGenCRM 0" name="x_snc_crm_applic_1_leads" related_list="NULL" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">e202c193471b69102908cde3836d4346</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_snc_crm_applic_1_account.lead</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-13 08:38:13</sys_created_on>
+            <sys_id>2202c193471b69102908cde3836d4349</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-13 08:38:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Leads - Workspace NextGenCRM 0</calculated_name>
+            <filter/>
+            <name>x_snc_crm_applic_1_leads</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-13 08:38:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e202c193471b69102908cde3836d4346</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Leads - Workspace NextGenCRM 0</sys_name>
+            <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+            <sys_update_name>sys_ui_related_x_snc_crm_applic_1_leads_workspace-nextgencrm-0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-13 08:38:13</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace NextGenCRM 0" name="workspace-nextgencrm-0">7a9b73f0eeb6e91030233c1d02c2f32e</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CRM Application">63c9eca147e621102908cde3836d436d</application>
+        <file_path/>
+        <instance_id>ac7167dddb2eedd49df22f17d496195d</instance_id>
+        <instance_name>emprmanchikanti2</instance_name>
+        <name>sys_ui_related_x_snc_crm_applic_1_leads_workspace-nextgencrm-0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="x_snc_crm_applic_1_leads" version="2" view="workspace-nextgencrm-0"><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Leads - Workspace NextGenCRM 0" name="x_snc_crm_applic_1_leads" related_list="NULL" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">e202c193471b69102908cde3836d4346</list_id><order_by/><position>0</position><related_list>x_snc_crm_applic_1_account.lead</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-13 08:38:13</sys_created_on><sys_id>2202c193471b69102908cde3836d4349</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-13 08:38:13</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Leads - Workspace NextGenCRM 0</calculated_name><filter/><name>x_snc_crm_applic_1_leads</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-13 08:38:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e202c193471b69102908cde3836d4346</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Leads - Workspace NextGenCRM 0</sys_name><sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package><sys_policy/><sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope><sys_update_name>sys_ui_related_x_snc_crm_applic_1_leads_workspace-nextgencrm-0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-13 08:38:13</sys_updated_on><sys_user/><view display_value="Workspace NextGenCRM 0" name="workspace-nextgencrm-0">7a9b73f0eeb6e91030233c1d02c2f32e</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+        <payload_hash>88399625</payload_hash>
+        <record_name>Leads</record_name>
+        <reverted_from/>
+        <source>08d9eca147e621102908cde3836d43f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-13 08:38:14</sys_created_on>
+        <sys_id>b602c193471b69102908cde3836d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188b3e7d1ed0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-13 08:38:14</sys_updated_on>
+        <type>Related Lists</type>
+        <update_guid>ba02c193d81b6910577d0d2aea15654a</update_guid>
+        <update_guid_history>ba02c193d81b6910577d0d2aea15654a:88399625</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-07-09 12:56:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_related_list">sys_ui_related_list</sys_db_object>
+        <sys_id>358f14737e7a496a90518953bde47009</sys_id>
+        <sys_metadata>e202c193471b69102908cde3836d4346</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Leads - Workspace NextGenCRM 0</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_parent display_value="Crm Applic 1 Leads">ad667ce947e621102908cde3836d43ee</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_scope_delete display_value="">0792609ddad7495c84516a200d8c2561</sys_scope_delete>
+        <sys_update_name>sys_ui_related_x_snc_crm_applic_1_leads_workspace-nextgencrm-0</sys_update_name>
+        <sys_update_version display_value="sys_ui_related_x_snc_crm_applic_1_leads_workspace-nextgencrm-0">b602c193471b69102908cde3836d434b</sys_update_version>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-07-09 12:56:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="Sales Operation">657474b147e261102908cde3836d4336</ais_search_source>
+        <label>Sales Operation</label>
+        <name>Sales Operation</name>
+        <order>300</order>
+        <search_context_config display_value="CRM Application AI Search Configuration">4754fc71fbe2611088b2b5e3ad62788e</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 09:00:56</sys_created_on>
+        <sys_id>e97474b147e261102908cde3836d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sales Operation</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>sys_search_filter_e97474b147e261102908cde3836d433b</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 09:00:56</sys_updated_on>
+    </sys_search_filter>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>citizendev</sys_created_by>
+        <sys_created_on>2023-05-12 07:12:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f69b73f09bb6e910c6ef3be4288fbf38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>m2m_app_config_theme_f69b73f09bb6e910c6ef3be4288fbf38</sys_update_name>
+        <sys_updated_by>citizendev</sys_updated_by>
+        <sys_updated_on>2023-05-12 07:12:47</sys_updated_on>
+        <theme display_value="Starter Workspace Theme">ba9b73f0c0b6e9106448831a85f55338</theme>
+        <ux_app_configuration display_value="NextGenCRM Config">369b73f06db6e910c5652a3a9c5ce339</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

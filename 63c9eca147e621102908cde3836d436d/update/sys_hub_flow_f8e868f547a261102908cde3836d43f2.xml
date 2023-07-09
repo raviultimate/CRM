@@ -1,0 +1,2530 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <internal_name>create_account_when_sales_op_is_closed</internal_name>
+        <label_cache>[{"name":"Updated_1.current.opportunity","label":"Trigger - Record Updated➛Sales Operation Record➛Opportunity","reference":"x_snc_crm_applic_1_opportunity","reference_display":"Opportunity","type":"reference","base_type":"reference","parent_table_name":"x_snc_crm_applic_1_sales_operation","column_name":"opportunity"},{"name":"Updated_1.current.lead","label":"Trigger - Record Updated➛Sales Operation Record➛Lead","reference":"x_snc_crm_applic_1_leads","reference_display":"Leads","type":"reference","base_type":"reference","parent_table_name":"x_snc_crm_applic_1_sales_operation","column_name":"lead"},{"name":"Updated_1.current.state","label":"Trigger - Record Updated➛Sales Operation Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_snc_crm_applic_1_sales_operation","column_name":"state","choices":[{"used":false,"label":"Pending","rawLabel":"Pending","selected":false,"missing":false,"reference":false,"image":"","value":"-5","parameters":{"name":"x_snc_crm_applic_1_sales_operation"}},{"used":false,"label":"Open","rawLabel":"Open","selected":false,"missing":false,"reference":false,"image":"","value":"1","parameters":{"name":"x_snc_crm_applic_1_sales_operation"}},{"used":false,"label":"Processed","rawLabel":"Processed","selected":false,"missing":false,"reference":false,"image":"","value":"8","parameters":{"name":"x_snc_crm_applic_1_sales_operation"}},{"used":false,"label":"Closed Complete","rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"image":"","value":"2","parameters":{"name":"x_snc_crm_applic_1_sales_operation"}},{"used":false,"label":"Closed Incomplete","rawLabel":"Closed Incomplete","selected":false,"missing":false,"reference":false,"image":"","value":"3","parameters":{"name":"x_snc_crm_applic_1_sales_operation"}}]},{"name":"Updated_1.current.assignment_group","label":"Trigger - Record Updated➛Sales Operation Record➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_snc_crm_applic_1_sales_operation","column_name":"assignment_group"},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Sales Operation Record","reference":"x_snc_crm_applic_1_sales_operation","reference_display":"Sales Operation","type":"reference","base_type":"reference","attributes":{}},{"name":"ecdca0ae-9ff5-4cb9-97e8-89a515f1e89f.record.lead","label":"2 - Update Record➛Opportunity Record➛Lead","reference":"x_snc_crm_applic_1_leads","reference_display":"Leads","type":"reference","base_type":"reference","parent_table_name":"x_snc_crm_applic_1_opportunity","column_name":"lead"},{"name":"Updated_1.current.opportunity.lead","label":"Trigger - Record Updated➛Sales Operation Record➛Opportunity➛Lead","reference":"x_snc_crm_applic_1_leads","reference_display":"Leads","type":"reference","base_type":"reference","parent_table_name":"x_snc_crm_applic_1_opportunity","column_name":"lead"}]</label_cache>
+        <master_snapshot>3d5bec7947a261102908cde3836d4337</master_snapshot>
+        <name>Create Account when sales op is closed</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>f7541f9a4762e1102908cde3836d4378</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:10:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f8e868f547a261102908cde3836d43f2</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Create Account when sales op is closed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>sys_hub_flow_f8e868f547a261102908cde3836d43f2</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:33</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=f8e868f547a261102908cde3836d43f2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f8e868f547a261102908cde3836d43f2"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_crm_applic_1_sales_operation">stateCHANGESTO3^ORstateCHANGESTO2^ORstateCHANGESTO8<item display_value="Closed Incomplete" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="3"/>
+            <item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="true" value="2"/>
+            <item display_value="Processed" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="true" value="8"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-04 09:56:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f7541f9a4762e1102908cde3836d4378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:32</sys_updated_on>
+        <table>x_snc_crm_applic_1_sales_operation</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>f8e868f547a261102908cde3836d43f2</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-04 09:56:32</sys_created_on>
+        <sys_id>b3541f9a4762e1102908cde3836d4379</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:32</sys_updated_on>
+        <trigger display_value="">f7541f9a4762e1102908cde3836d4378</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=f8e868f547a261102908cde3836d43f2^sys_idNOT INb3541f9a4762e1102908cde3836d4379"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=f8e868f547a261102908cde3836d43f2^sys_idNOT INea8aa07947a261102908cde3836d4302"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>ea8aa07947a261102908cde3836d4302</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:33</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ea8aa07947a261102908cde3836d4302"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>ea8aa07947a261102908cde3836d4302</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-04 09:17:04</sys_created_on>
+        <sys_id>655bcb924762e1102908cde3836d43bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:17:04</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>ea8aa07947a261102908cde3836d4302</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>a28aa07947a261102908cde3836d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <value>x_snc_crm_applic_1_sales_operation</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>ea8aa07947a261102908cde3836d4302</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>ea8aa07947a261102908cde3836d4303</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 08:04:38</sys_updated_on>
+        <value>stateCHANGESTO3^ORstateCHANGESTO2^ORstateCHANGESTO8</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=ea8aa07947a261102908cde3836d4302"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f8e868f547a261102908cde3836d43f2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f8e868f547a261102908cde3836d43f2^sys_idNOT IN74e868f547a261102908cde3836d43f3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f8e868f547a261102908cde3836d43f2</id>
+        <name>Create Account when sales op is closed</name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:10:21</sys_created_on>
+        <sys_id>74e868f547a261102908cde3836d43f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:10:21</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=74e868f547a261102908cde3836d43f3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f8e868f547a261102908cde3836d43f2^sys_idNOT IN6e8a607947a261102908cde3836d43fd,a68a607947a261102908cde3836d43f6,a68a607947a261102908cde3836d43fa"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</model>
+        <model_id>f8e868f547a261102908cde3836d43f2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f8e868f547a261102908cde3836d43f2</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>6e8a607947a261102908cde3836d43fd</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</model>
+        <model_id>f8e868f547a261102908cde3836d43f2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f8e868f547a261102908cde3836d43f2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>a68a607947a261102908cde3836d43f6</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</model>
+        <model_id>f8e868f547a261102908cde3836d43f2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f8e868f547a261102908cde3836d43f2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>a68a607947a261102908cde3836d43fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=f8e868f547a261102908cde3836d43f2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f8e868f547a261102908cde3836d43f2"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f8e868f547a261102908cde3836d43f2^sys_idNOT IN228aa07947a261102908cde3836d4328,694b6c7947a261102908cde3836d4337,9c807cbd47a261102908cde3836d4398,a14b6c7947a261102908cde3836d430c,ae8aa07947a261102908cde3836d431a,ee8aa07947a261102908cde3836d4321"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <order>4</order>
+        <parent_ui_id>5746cdd4-3f8f-483c-be1b-444b9028c9c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:35</sys_created_on>
+        <sys_id>228aa07947a261102908cde3836d4328</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-21 08:45:19</sys_updated_on>
+        <ui_id>fc448b06-0a7a-44ee-8b5f-ddd26ac1663f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=228aa07947a261102908cde3836d4328"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>228aa07947a261102908cde3836d4328</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:35</sys_created_on>
+        <sys_id>2e8aa07947a261102908cde3836d4329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:35</sys_updated_on>
+        <value>x_snc_crm_applic_1_leads</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>228aa07947a261102908cde3836d4328</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:35</sys_created_on>
+        <sys_id>6a8aa07947a261102908cde3836d4329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:35</sys_updated_on>
+        <value>status=qualified</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=228aa07947a261102908cde3836d4328"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>228aa07947a261102908cde3836d4328</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:35</sys_created_on>
+        <sys_id>e68aa07947a261102908cde3836d4329</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 08:21:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{ecdca0ae-9ff5-4cb9-97e8-89a515f1e89f.record.lead}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>228aa07947a261102908cde3836d4328</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:35</sys_created_on>
+        <sys_id>628aa07947a261102908cde3836d4329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>228aa07947a261102908cde3836d4328</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:35</sys_created_on>
+        <sys_id>268aa07947a261102908cde3836d4329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=228aa07947a261102908cde3836d4328"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=228aa07947a261102908cde3836d4328"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <order>8</order>
+        <parent_ui_id>283b9099-5a00-4e23-9ef9-316ebbc54b58</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>694b6c7947a261102908cde3836d4337</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-21 08:45:19</sys_updated_on>
+        <ui_id>c8115d8d-429d-4454-bb40-2b4464324d51</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=694b6c7947a261102908cde3836d4337"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>694b6c7947a261102908cde3836d4337</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>654b6c7947a261102908cde3836d4339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:20:47</sys_updated_on>
+        <value>x_snc_crm_applic_1_leads</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>694b6c7947a261102908cde3836d4337</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>a14b6c7947a261102908cde3836d4339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:20:47</sys_updated_on>
+        <value>status=dis_qualified</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=694b6c7947a261102908cde3836d4337"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>694b6c7947a261102908cde3836d4337</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>214b6c7947a261102908cde3836d4339</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.opportunity.lead}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>694b6c7947a261102908cde3836d4337</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>a94b6c7947a261102908cde3836d4338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:20:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>694b6c7947a261102908cde3836d4337</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>6d4b6c7947a261102908cde3836d4338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:20:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=694b6c7947a261102908cde3836d4337"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=694b6c7947a261102908cde3836d4337"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <order>11</order>
+        <parent_ui_id>2872ee33-e7df-4348-ac27-fd2ff7ddb00f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:38</sys_created_on>
+        <sys_id>9c807cbd47a261102908cde3836d4398</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-21 08:45:19</sys_updated_on>
+        <ui_id>49663799-d82f-466a-96fb-ef8610b0911d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9c807cbd47a261102908cde3836d4398"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9c807cbd47a261102908cde3836d4398</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:38</sys_created_on>
+        <sys_id>90807cbd47a261102908cde3836d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:38</sys_updated_on>
+        <value>x_snc_crm_applic_1_sales_operation</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9c807cbd47a261102908cde3836d4398</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:38</sys_created_on>
+        <sys_id>dc807cbd47a261102908cde3836d439a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:38</sys_updated_on>
+        <value>assignment_group={"display":"Sales CRM group","value":"a667a0b547a261102908cde3836d43a7","sys_id":"a667a0b547a261102908cde3836d43a7"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9c807cbd47a261102908cde3836d4398"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>9c807cbd47a261102908cde3836d4398</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:38</sys_created_on>
+        <sys_id>5c807cbd47a261102908cde3836d439a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>9c807cbd47a261102908cde3836d4398</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:38</sys_created_on>
+        <sys_id>d4807cbd47a261102908cde3836d439a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>9c807cbd47a261102908cde3836d4398</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:38</sys_created_on>
+        <sys_id>98807cbd47a261102908cde3836d439a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9c807cbd47a261102908cde3836d4398"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9c807cbd47a261102908cde3836d4398"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <order>7</order>
+        <parent_ui_id>283b9099-5a00-4e23-9ef9-316ebbc54b58</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>a14b6c7947a261102908cde3836d430c</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-21 08:45:19</sys_updated_on>
+        <ui_id>5aa8b830-1fcd-4038-8580-772f94fa2ea9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a14b6c7947a261102908cde3836d430c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a14b6c7947a261102908cde3836d430c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>ad4b6c7947a261102908cde3836d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:20:47</sys_updated_on>
+        <value>x_snc_crm_applic_1_opportunity</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a14b6c7947a261102908cde3836d430c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>e94b6c7947a261102908cde3836d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:20:47</sys_updated_on>
+        <value>status=closed_lost</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a14b6c7947a261102908cde3836d430c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a14b6c7947a261102908cde3836d430c</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>694b6c7947a261102908cde3836d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:20:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.opportunity}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a14b6c7947a261102908cde3836d430c</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>e14b6c7947a261102908cde3836d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:20:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>a14b6c7947a261102908cde3836d430c</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>a54b6c7947a261102908cde3836d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:20:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a14b6c7947a261102908cde3836d430c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a14b6c7947a261102908cde3836d430c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <order>2</order>
+        <parent_ui_id>5746cdd4-3f8f-483c-be1b-444b9028c9c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>ae8aa07947a261102908cde3836d431a</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-21 08:45:19</sys_updated_on>
+        <ui_id>ecdca0ae-9ff5-4cb9-97e8-89a515f1e89f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ae8aa07947a261102908cde3836d431a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ae8aa07947a261102908cde3836d431a</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>6a8aa07947a261102908cde3836d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <value>x_snc_crm_applic_1_opportunity</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ae8aa07947a261102908cde3836d431a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>a68aa07947a261102908cde3836d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <value>status=closed_won</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ae8aa07947a261102908cde3836d431a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ae8aa07947a261102908cde3836d431a</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>268aa07947a261102908cde3836d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.opportunity}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ae8aa07947a261102908cde3836d431a</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>ae8aa07947a261102908cde3836d431c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ae8aa07947a261102908cde3836d431a</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>628aa07947a261102908cde3836d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ae8aa07947a261102908cde3836d431a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ae8aa07947a261102908cde3836d431a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <order>3</order>
+        <parent_ui_id>5746cdd4-3f8f-483c-be1b-444b9028c9c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>ee8aa07947a261102908cde3836d4321</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-21 08:45:19</sys_updated_on>
+        <ui_id>605e5542-0c0e-4501-950e-8adb86e9e651</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ee8aa07947a261102908cde3836d4321"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ee8aa07947a261102908cde3836d4321</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>2a8aa07947a261102908cde3836d4323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <value>x_snc_crm_applic_1_account</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ee8aa07947a261102908cde3836d4321"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ee8aa07947a261102908cde3836d4321</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>e28aa07947a261102908cde3836d4323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ee8aa07947a261102908cde3836d4321</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>a68aa07947a261102908cde3836d4323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>lead={{Updated_1.current.lead}}^opportunity={{Updated_1.current.opportunity}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ee8aa07947a261102908cde3836d4321"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ee8aa07947a261102908cde3836d4321"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=f8e868f547a261102908cde3836d43f2"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f8e868f547a261102908cde3836d43f2^sys_idNOT IN18807cbd47a261102908cde3836d438e,254b6c7947a261102908cde3836d4302,90807cbd47a261102908cde3836d4391,ad4b6c7947a261102908cde3836d4304,ae8aa07947a261102908cde3836d4305"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">5c807cbd47a261102908cde3836d438d</block>
+        <comment/>
+        <connected_to>283b9099-5a00-4e23-9ef9-316ebbc54b58</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>b01f80fc-add5-44c8-aa8d-ddabea4fa0c7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:38</sys_created_on>
+        <sys_id>18807cbd47a261102908cde3836d438e</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:33</sys_updated_on>
+        <ui_id>98bf4d6b-1442-4d06-b843-68f3c3fabafa</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=18807cbd47a261102908cde3836d438e"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=18807cbd47a261102908cde3836d438e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=18807cbd47a261102908cde3836d438e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ad4b6c7947a261102908cde3836d4301</block>
+        <comment/>
+        <connected_to>5746cdd4-3f8f-483c-be1b-444b9028c9c9</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>254b6c7947a261102908cde3836d4302</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:33</sys_updated_on>
+        <ui_id>b01f80fc-add5-44c8-aa8d-ddabea4fa0c7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=254b6c7947a261102908cde3836d4302"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=254b6c7947a261102908cde3836d4302"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=254b6c7947a261102908cde3836d4302"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d8807cbd47a261102908cde3836d4390</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>98bf4d6b-1442-4d06-b843-68f3c3fabafa</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:38</sys_created_on>
+        <sys_id>90807cbd47a261102908cde3836d4391</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:33</sys_updated_on>
+        <ui_id>2872ee33-e7df-4348-ac27-fd2ff7ddb00f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=90807cbd47a261102908cde3836d4391"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>90807cbd47a261102908cde3836d4391</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:38</sys_created_on>
+        <sys_id>14807cbd47a261102908cde3836d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:38</sys_updated_on>
+        <value>state is processed</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=90807cbd47a261102908cde3836d4391"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>90807cbd47a261102908cde3836d4391</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:38</sys_created_on>
+        <sys_id>90807cbd47a261102908cde3836d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.state}}=8</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>90807cbd47a261102908cde3836d4391</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:38</sys_created_on>
+        <sys_id>d8807cbd47a261102908cde3836d4393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=90807cbd47a261102908cde3836d4391"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=90807cbd47a261102908cde3836d4391"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">294b6c7947a261102908cde3836d4304</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>b01f80fc-add5-44c8-aa8d-ddabea4fa0c7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>ad4b6c7947a261102908cde3836d4304</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:33</sys_updated_on>
+        <ui_id>283b9099-5a00-4e23-9ef9-316ebbc54b58</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ad4b6c7947a261102908cde3836d4304"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ad4b6c7947a261102908cde3836d4304</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>2d4b6c7947a261102908cde3836d4307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:20:47</sys_updated_on>
+        <value>State is closed incomplete</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ad4b6c7947a261102908cde3836d4304"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>ad4b6c7947a261102908cde3836d4304</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>a94b6c7947a261102908cde3836d4307</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.state}}=3</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>ad4b6c7947a261102908cde3836d4304</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:20:47</sys_created_on>
+        <sys_id>e54b6c7947a261102908cde3836d4307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:20:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ad4b6c7947a261102908cde3836d4304"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ad4b6c7947a261102908cde3836d4304"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e28aa07947a261102908cde3836d4305</block>
+        <comment>State is closed complete</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>ae8aa07947a261102908cde3836d4305</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:33</sys_updated_on>
+        <ui_id>5746cdd4-3f8f-483c-be1b-444b9028c9c9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ae8aa07947a261102908cde3836d4305"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ae8aa07947a261102908cde3836d4305</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>6e8aa07947a261102908cde3836d4309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <value>Close Complete</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ae8aa07947a261102908cde3836d4305"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>ae8aa07947a261102908cde3836d4305</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>ea8aa07947a261102908cde3836d4309</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.state}}=2</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>ae8aa07947a261102908cde3836d4305</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>268aa07947a261102908cde3836d4309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ae8aa07947a261102908cde3836d4305"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ae8aa07947a261102908cde3836d4305"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f8e868f547a261102908cde3836d43f2"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f8e868f547a261102908cde3836d43f2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f8e868f547a261102908cde3836d43f2^sys_idNOT IN2a8a607947a261102908cde3836d43f9,628aa07947a261102908cde3836d4300,ee8a607947a261102908cde3836d43fc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f8e868f547a261102908cde3836d43f2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>2a8a607947a261102908cde3836d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f8e868f547a261102908cde3836d43f2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>628aa07947a261102908cde3836d4300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f8e868f547a261102908cde3836d43f2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:17:34</sys_created_on>
+        <sys_id>ee8a607947a261102908cde3836d43fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:17:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f8e868f547a261102908cde3836d43f2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_f8e868f547a261102908cde3836d43f2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f8e868f547a261102908cde3836d43f2"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f8e868f547a261102908cde3836d43f2^sys_idNOT IN525bec7947a261102908cde3836d43e4"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"525bec7947a261102908cde3836d43e4","name":"plan","plan_signature":null}}</plan>
+        <plan_id>f8e868f547a261102908cde3836d43f2</plan_id>
+        <snapshot>2350de7147a3a1502908cde3836d43fc</snapshot>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>525bec7947a261102908cde3836d43e4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:32</sys_updated_on>
+        <trigger display_value="">f7541f9a4762e1102908cde3836d4378</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f8e868f547a261102908cde3836d43f2"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_account_when_sales_op_is_closed</internal_name>
+        <label_cache>[{"name":"Updated_1.current.opportunity","label":"Trigger - Record Updated➛Sales Operation Record➛Opportunity","reference":"x_snc_crm_applic_1_opportunity","reference_display":"Opportunity","type":"reference","base_type":"reference","parent_table_name":"x_snc_crm_applic_1_sales_operation","column_name":"opportunity"},{"name":"Updated_1.current.lead","label":"Trigger - Record Updated➛Sales Operation Record➛Lead","reference":"x_snc_crm_applic_1_leads","reference_display":"Leads","type":"reference","base_type":"reference","parent_table_name":"x_snc_crm_applic_1_sales_operation","column_name":"lead"},{"name":"Updated_1.current.state","label":"Trigger - Record Updated➛Sales Operation Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_snc_crm_applic_1_sales_operation","column_name":"state","choices":[{"used":false,"label":"Pending","rawLabel":"Pending","selected":false,"missing":false,"reference":false,"image":"","value":"-5","parameters":{"name":"x_snc_crm_applic_1_sales_operation"}},{"used":false,"label":"Open","rawLabel":"Open","selected":false,"missing":false,"reference":false,"image":"","value":"1","parameters":{"name":"x_snc_crm_applic_1_sales_operation"}},{"used":false,"label":"Processed","rawLabel":"Processed","selected":false,"missing":false,"reference":false,"image":"","value":"8","parameters":{"name":"x_snc_crm_applic_1_sales_operation"}},{"used":false,"label":"Closed Complete","rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"image":"","value":"2","parameters":{"name":"x_snc_crm_applic_1_sales_operation"}},{"used":false,"label":"Closed Incomplete","rawLabel":"Closed Incomplete","selected":false,"missing":false,"reference":false,"image":"","value":"3","parameters":{"name":"x_snc_crm_applic_1_sales_operation"}}]},{"name":"Updated_1.current.assignment_group","label":"Trigger - Record Updated➛Sales Operation Record➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_snc_crm_applic_1_sales_operation","column_name":"assignment_group"},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Sales Operation Record","reference":"x_snc_crm_applic_1_sales_operation","reference_display":"Sales Operation","type":"reference","base_type":"reference","attributes":{}},{"name":"ecdca0ae-9ff5-4cb9-97e8-89a515f1e89f.record.lead","label":"2 - Update Record➛Opportunity Record➛Lead","reference":"x_snc_crm_applic_1_leads","reference_display":"Leads","type":"reference","base_type":"reference","parent_table_name":"x_snc_crm_applic_1_opportunity","column_name":"lead"},{"name":"Updated_1.current.opportunity.lead","label":"Trigger - Record Updated➛Sales Operation Record➛Opportunity➛Lead","reference":"x_snc_crm_applic_1_leads","reference_display":"Leads","type":"reference","base_type":"reference","parent_table_name":"x_snc_crm_applic_1_opportunity","column_name":"lead"}]</label_cache>
+        <master>true</master>
+        <name>Create Account when sales op is closed</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create Account when sales op is closed">f8e868f547a261102908cde3836d43f2</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3d5bec7947a261102908cde3836d4337</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:31</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=3d5bec7947a261102908cde3836d4337"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3d5bec7947a261102908cde3836d4337"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=3d5bec7947a261102908cde3836d4337^sys_idNOT IN4e5bec7947a261102908cde3836d4394"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>4e5bec7947a261102908cde3836d4394</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:33</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4e5bec7947a261102908cde3836d4394"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4e5bec7947a261102908cde3836d4394</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>865bec7947a261102908cde3836d4396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>x_snc_crm_applic_1_sales_operation</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4e5bec7947a261102908cde3836d4394</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>c25bec7947a261102908cde3836d4396</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 08:05:25</sys_updated_on>
+        <value>stateCHANGESTO3^ORstateCHANGESTO2^ORstateCHANGESTO8</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4e5bec7947a261102908cde3836d4394</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-04 09:17:18</sys_created_on>
+        <sys_id>c56b8f924762e1102908cde3836d4399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:17:18</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=4e5bec7947a261102908cde3836d4394"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3d5bec7947a261102908cde3836d4337"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3d5bec7947a261102908cde3836d4337^sys_idNOT IN795bec7947a261102908cde3836d4338"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3d5bec7947a261102908cde3836d4337</id>
+        <name>Create Account when sales op is closed</name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:04</sys_created_on>
+        <sys_id>795bec7947a261102908cde3836d4338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:04</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=795bec7947a261102908cde3836d4338"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3d5bec7947a261102908cde3836d4337^sys_idNOT IN355bec7947a261102908cde3836d4354,795bec7947a261102908cde3836d435c,bd5bec7947a261102908cde3836d4339"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</model>
+        <model_id>3d5bec7947a261102908cde3836d4337</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3d5bec7947a261102908cde3836d4337</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:04</sys_created_on>
+        <sys_id>355bec7947a261102908cde3836d4354</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</model>
+        <model_id>3d5bec7947a261102908cde3836d4337</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3d5bec7947a261102908cde3836d4337</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:04</sys_created_on>
+        <sys_id>795bec7947a261102908cde3836d435c</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</model>
+        <model_id>3d5bec7947a261102908cde3836d4337</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3d5bec7947a261102908cde3836d4337</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:04</sys_created_on>
+        <sys_id>bd5bec7947a261102908cde3836d4339</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=3d5bec7947a261102908cde3836d4337"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3d5bec7947a261102908cde3836d4337"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=3d5bec7947a261102908cde3836d4337^sys_idNOT IN2f8030fd47a261102908cde3836d4390,465bec7947a261102908cde3836d4386,4a5bec7947a261102908cde3836d4380,4a5bec7947a261102908cde3836d438c,4e5bec7947a261102908cde3836d4392,ca5bec7947a261102908cde3836d4378"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <order>11</order>
+        <parent_ui_id>2872ee33-e7df-4348-ac27-fd2ff7ddb00f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:51</sys_created_on>
+        <sys_id>2f8030fd47a261102908cde3836d4390</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:31</sys_updated_on>
+        <ui_id>49663799-d82f-466a-96fb-ef8610b0911d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2f8030fd47a261102908cde3836d4390"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2f8030fd47a261102908cde3836d4390</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:51</sys_created_on>
+        <sys_id>2b8030fd47a261102908cde3836d4392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:51</sys_updated_on>
+        <value>x_snc_crm_applic_1_sales_operation</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2f8030fd47a261102908cde3836d4390</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:51</sys_created_on>
+        <sys_id>678030fd47a261102908cde3836d4392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:51</sys_updated_on>
+        <value>assignment_group={"display":"Sales CRM group","value":"a667a0b547a261102908cde3836d43a7","sys_id":"a667a0b547a261102908cde3836d43a7"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2f8030fd47a261102908cde3836d4390"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2f8030fd47a261102908cde3836d4390</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:51</sys_created_on>
+        <sys_id>e38030fd47a261102908cde3836d4392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2f8030fd47a261102908cde3836d4390</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:51</sys_created_on>
+        <sys_id>6f8030fd47a261102908cde3836d4391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>2f8030fd47a261102908cde3836d4390</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:51</sys_created_on>
+        <sys_id>238030fd47a261102908cde3836d4392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2f8030fd47a261102908cde3836d4390"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2f8030fd47a261102908cde3836d4390"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <order>4</order>
+        <parent_ui_id>5746cdd4-3f8f-483c-be1b-444b9028c9c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>465bec7947a261102908cde3836d4386</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:31</sys_updated_on>
+        <ui_id>fc448b06-0a7a-44ee-8b5f-ddd26ac1663f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=465bec7947a261102908cde3836d4386"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>465bec7947a261102908cde3836d4386</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>425bec7947a261102908cde3836d4388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>x_snc_crm_applic_1_leads</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>465bec7947a261102908cde3836d4386</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>8e5bec7947a261102908cde3836d4387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>status=qualified</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=465bec7947a261102908cde3836d4386"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>465bec7947a261102908cde3836d4386</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>0e5bec7947a261102908cde3836d4387</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 08:21:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{ecdca0ae-9ff5-4cb9-97e8-89a515f1e89f.record.lead}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>465bec7947a261102908cde3836d4386</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>865bec7947a261102908cde3836d4387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>465bec7947a261102908cde3836d4386</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>4a5bec7947a261102908cde3836d4387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=465bec7947a261102908cde3836d4386"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=465bec7947a261102908cde3836d4386"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <order>3</order>
+        <parent_ui_id>5746cdd4-3f8f-483c-be1b-444b9028c9c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>4a5bec7947a261102908cde3836d4380</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:31</sys_updated_on>
+        <ui_id>605e5542-0c0e-4501-950e-8adb86e9e651</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4a5bec7947a261102908cde3836d4380"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4a5bec7947a261102908cde3836d4380</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>4e5bec7947a261102908cde3836d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>x_snc_crm_applic_1_account</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4a5bec7947a261102908cde3836d4380"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4a5bec7947a261102908cde3836d4380</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>0a5bec7947a261102908cde3836d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4a5bec7947a261102908cde3836d4380</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>ca5bec7947a261102908cde3836d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>lead={{Updated_1.current.lead}}^opportunity={{Updated_1.current.opportunity}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4a5bec7947a261102908cde3836d4380"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4a5bec7947a261102908cde3836d4380"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <order>7</order>
+        <parent_ui_id>283b9099-5a00-4e23-9ef9-316ebbc54b58</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>4a5bec7947a261102908cde3836d438c</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:31</sys_updated_on>
+        <ui_id>5aa8b830-1fcd-4038-8580-772f94fa2ea9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4a5bec7947a261102908cde3836d438c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4a5bec7947a261102908cde3836d438c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>465bec7947a261102908cde3836d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>x_snc_crm_applic_1_opportunity</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4a5bec7947a261102908cde3836d438c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>825bec7947a261102908cde3836d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>status=closed_lost</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4a5bec7947a261102908cde3836d438c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4a5bec7947a261102908cde3836d438c</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>025bec7947a261102908cde3836d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.opportunity}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4a5bec7947a261102908cde3836d438c</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>8a5bec7947a261102908cde3836d438d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4a5bec7947a261102908cde3836d438c</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>4e5bec7947a261102908cde3836d438d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4a5bec7947a261102908cde3836d438c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4a5bec7947a261102908cde3836d438c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <order>8</order>
+        <parent_ui_id>283b9099-5a00-4e23-9ef9-316ebbc54b58</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>4e5bec7947a261102908cde3836d4392</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:31</sys_updated_on>
+        <ui_id>c8115d8d-429d-4454-bb40-2b4464324d51</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4e5bec7947a261102908cde3836d4392"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4e5bec7947a261102908cde3836d4392</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>4a5bec7947a261102908cde3836d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>x_snc_crm_applic_1_leads</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4e5bec7947a261102908cde3836d4392</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>865bec7947a261102908cde3836d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>status=dis_qualified</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4e5bec7947a261102908cde3836d4392"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4e5bec7947a261102908cde3836d4392</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>065bec7947a261102908cde3836d4394</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.opportunity.lead}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4e5bec7947a261102908cde3836d4392</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>8e5bec7947a261102908cde3836d4393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4e5bec7947a261102908cde3836d4392</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>425bec7947a261102908cde3836d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4e5bec7947a261102908cde3836d4392"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4e5bec7947a261102908cde3836d4392"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <order>2</order>
+        <parent_ui_id>5746cdd4-3f8f-483c-be1b-444b9028c9c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>ca5bec7947a261102908cde3836d4378</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:30</sys_updated_on>
+        <ui_id>ecdca0ae-9ff5-4cb9-97e8-89a515f1e89f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ca5bec7947a261102908cde3836d4378"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ca5bec7947a261102908cde3836d4378</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>065bec7947a261102908cde3836d437a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>status=closed_won</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ca5bec7947a261102908cde3836d4378</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>c65bec7947a261102908cde3836d437a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>x_snc_crm_applic_1_opportunity</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ca5bec7947a261102908cde3836d4378"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ca5bec7947a261102908cde3836d4378</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>825bec7947a261102908cde3836d437a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.opportunity}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ca5bec7947a261102908cde3836d4378</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>0e5bec7947a261102908cde3836d4379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ca5bec7947a261102908cde3836d4378</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>ce5bec7947a261102908cde3836d4379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ca5bec7947a261102908cde3836d4378"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ca5bec7947a261102908cde3836d4378"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=3d5bec7947a261102908cde3836d4337"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=3d5bec7947a261102908cde3836d4337^sys_idNOT IN2f8030fd47a261102908cde3836d43a7,395bec7947a261102908cde3836d436c,638030fd47a261102908cde3836d43a5,755bec7947a261102908cde3836d4368,755bec7947a261102908cde3836d436f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d8807cbd47a261102908cde3836d4390</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>98bf4d6b-1442-4d06-b843-68f3c3fabafa</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:51</sys_created_on>
+        <sys_id>2f8030fd47a261102908cde3836d43a7</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:31</sys_updated_on>
+        <ui_id>2872ee33-e7df-4348-ac27-fd2ff7ddb00f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2f8030fd47a261102908cde3836d43a7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2f8030fd47a261102908cde3836d43a7</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:51</sys_created_on>
+        <sys_id>ab8030fd47a261102908cde3836d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:51</sys_updated_on>
+        <value>state is processed</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2f8030fd47a261102908cde3836d43a7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>2f8030fd47a261102908cde3836d43a7</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:51</sys_created_on>
+        <sys_id>2b8030fd47a261102908cde3836d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.state}}=8</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>2f8030fd47a261102908cde3836d43a7</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:51</sys_created_on>
+        <sys_id>678030fd47a261102908cde3836d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2f8030fd47a261102908cde3836d43a7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2f8030fd47a261102908cde3836d43a7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ad4b6c7947a261102908cde3836d4301</block>
+        <comment/>
+        <connected_to>5746cdd4-3f8f-483c-be1b-444b9028c9c9</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>395bec7947a261102908cde3836d436c</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:31</sys_updated_on>
+        <ui_id>b01f80fc-add5-44c8-aa8d-ddabea4fa0c7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=395bec7947a261102908cde3836d436c"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=395bec7947a261102908cde3836d436c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=395bec7947a261102908cde3836d436c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">5c807cbd47a261102908cde3836d438d</block>
+        <comment/>
+        <connected_to>283b9099-5a00-4e23-9ef9-316ebbc54b58</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>b01f80fc-add5-44c8-aa8d-ddabea4fa0c7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:43:51</sys_created_on>
+        <sys_id>638030fd47a261102908cde3836d43a5</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:31</sys_updated_on>
+        <ui_id>98bf4d6b-1442-4d06-b843-68f3c3fabafa</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=638030fd47a261102908cde3836d43a5"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=638030fd47a261102908cde3836d43a5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=638030fd47a261102908cde3836d43a5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e28aa07947a261102908cde3836d4305</block>
+        <comment>State is closed complete</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>755bec7947a261102908cde3836d4368</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:30</sys_updated_on>
+        <ui_id>5746cdd4-3f8f-483c-be1b-444b9028c9c9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=755bec7947a261102908cde3836d4368"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>755bec7947a261102908cde3836d4368</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>7d5bec7947a261102908cde3836d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>Close Complete</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=755bec7947a261102908cde3836d4368"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>755bec7947a261102908cde3836d4368</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>f95bec7947a261102908cde3836d436b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.state}}=2</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>755bec7947a261102908cde3836d4368</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>395bec7947a261102908cde3836d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=755bec7947a261102908cde3836d4368"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=755bec7947a261102908cde3836d4368"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">294b6c7947a261102908cde3836d4304</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Account when sales op is closed">3d5bec7947a261102908cde3836d4337</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>b01f80fc-add5-44c8-aa8d-ddabea4fa0c7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>755bec7947a261102908cde3836d436f</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 09:56:31</sys_updated_on>
+        <ui_id>283b9099-5a00-4e23-9ef9-316ebbc54b58</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=755bec7947a261102908cde3836d436f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>755bec7947a261102908cde3836d436f</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>c25bec7947a261102908cde3836d4372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <value>State is closed incomplete</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=755bec7947a261102908cde3836d436f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>755bec7947a261102908cde3836d436f</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>425bec7947a261102908cde3836d4372</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:43:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.state}}=3</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>755bec7947a261102908cde3836d436f</id>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:05</sys_created_on>
+        <sys_id>8e5bec7947a261102908cde3836d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=755bec7947a261102908cde3836d436f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=755bec7947a261102908cde3836d436f"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3d5bec7947a261102908cde3836d4337"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3d5bec7947a261102908cde3836d4337"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3d5bec7947a261102908cde3836d4337^sys_idNOT IN355bec7947a261102908cde3836d4361,3d5bec7947a261102908cde3836d4350,715bec7947a261102908cde3836d4359"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3d5bec7947a261102908cde3836d4337</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:04</sys_created_on>
+        <sys_id>355bec7947a261102908cde3836d4361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3d5bec7947a261102908cde3836d4337</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:04</sys_created_on>
+        <sys_id>3d5bec7947a261102908cde3836d4350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3d5bec7947a261102908cde3836d4337</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 08:21:04</sys_created_on>
+        <sys_id>715bec7947a261102908cde3836d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 08:21:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3d5bec7947a261102908cde3836d4337"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3d5bec7947a261102908cde3836d4337"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3d5bec7947a261102908cde3836d4337"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>f8e868f547a261102908cde3836d43f2</sys_id>
+        <latest_snapshot>3d5bec7947a261102908cde3836d4337</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch1-hotfix1b-05-01-2023_05-15-2023_1848.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

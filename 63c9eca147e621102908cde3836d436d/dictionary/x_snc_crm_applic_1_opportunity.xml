@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d19ef0a1472a21102908cde3836d431b" label="Opportunity" max_length="40" name="x_snc_crm_applic_1_opportunity" text_index="true" type="collection">
+        <element label="Created Date" max_length="40" name="created_date" type="glide_date"/>
+        <element label="Lead" max_length="32" name="lead" reference="x_snc_crm_applic_1_leads" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Sales Op" max_length="32" name="sales_op" reference="x_snc_crm_applic_1_sales_operation" type="reference"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Closed Won" sequence="1" value="closed_won"/>
+                <element inactive_on_update="false" label="Closed Lost" sequence="2" value="closed_lost"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="lead"/>
+        </index>
+    </element>
+</database>

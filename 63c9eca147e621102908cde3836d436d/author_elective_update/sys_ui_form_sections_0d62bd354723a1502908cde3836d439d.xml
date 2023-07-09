@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections action="DELETE" form_id="0d62bd354723a1502908cde3836d439d" sys_domain="global" table="incident" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>hemanth.kumar@snc</sys_created_by>
+            <sys_created_on>2023-06-21 06:34:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dd62bd354723a1502908cde3836d43a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">0d62bd354723a1502908cde3836d439d</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">1d62bd354723a1502908cde3836d43a0</sys_ui_section>
+            <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+            <sys_updated_on>2023-06-21 06:34:17</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>hemanth.kumar@snc</sys_created_by>
+            <sys_created_on>2023-06-21 06:34:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9962bd354723a1502908cde3836d43df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">0d62bd354723a1502908cde3836d439d</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">1d62bd354723a1502908cde3836d43de</sys_ui_section>
+            <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+            <sys_updated_on>2023-06-21 06:34:17</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>hemanth.kumar@snc</sys_created_by>
+            <sys_created_on>2023-06-21 06:34:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d562bd354723a1502908cde3836d43e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">0d62bd354723a1502908cde3836d439d</sys_ui_form>
+            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">5962bd354723a1502908cde3836d43e2</sys_ui_section>
+            <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+            <sys_updated_on>2023-06-21 06:34:17</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>hemanth.kumar@snc</sys_created_by>
+            <sys_created_on>2023-06-21 06:34:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d62bd354723a1502908cde3836d439d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+            <sys_update_name>sys_ui_form_sections_0d62bd354723a1502908cde3836d439d</sys_update_name>
+            <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+            <sys_updated_on>2023-06-21 06:34:17</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace CRM Application 0" name="workspace-crm-application-0">8754fc71ffe26110a4aad0d01438ca92</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CRM Application">63c9eca147e621102908cde3836d436d</application>
+        <file_path/>
+        <instance_id>ac7167dddb2eedd49df22f17d496195d</instance_id>
+        <instance_name>emprmanchikanti2</instance_name>
+        <name>sys_ui_form_sections_0d62bd354723a1502908cde3836d439d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_form_sections form_id="0d62bd354723a1502908cde3836d439d" sys_domain="global" table="incident" version="3"><sys_ui_form_section action="INSERT_OR_UPDATE"><position>0</position><sys_created_by>hemanth.kumar@snc</sys_created_by><sys_created_on>2023-06-21 06:34:17</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dd62bd354723a1502908cde3836d43a1</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="incident" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">0d62bd354723a1502908cde3836d439d</sys_ui_form><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">1d62bd354723a1502908cde3836d43a0</sys_ui_section><sys_updated_by>hemanth.kumar@snc</sys_updated_by><sys_updated_on>2023-06-21 06:34:17</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>2</position><sys_created_by>hemanth.kumar@snc</sys_created_by><sys_created_on>2023-06-21 06:34:17</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9962bd354723a1502908cde3836d43df</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="incident" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">0d62bd354723a1502908cde3836d439d</sys_ui_form><sys_ui_section caption="Related Records" display_value="Related Records" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">1d62bd354723a1502908cde3836d43de</sys_ui_section><sys_updated_by>hemanth.kumar@snc</sys_updated_by><sys_updated_on>2023-06-21 06:34:17</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>3</position><sys_created_by>hemanth.kumar@snc</sys_created_by><sys_created_on>2023-06-21 06:34:17</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d562bd354723a1502908cde3836d43e3</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="incident" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">0d62bd354723a1502908cde3836d439d</sys_ui_form><sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="incident" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">5962bd354723a1502908cde3836d43e2</sys_ui_section><sys_updated_by>hemanth.kumar@snc</sys_updated_by><sys_updated_on>2023-06-21 06:34:17</sys_updated_on></sys_ui_form_section><sys_ui_form action="INSERT_OR_UPDATE"><name>incident</name><roles/><sys_class_name>sys_ui_form</sys_class_name><sys_created_by>hemanth.kumar@snc</sys_created_by><sys_created_on>2023-06-21 06:34:17</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0d62bd354723a1502908cde3836d439d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_overrides/><sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package><sys_policy/><sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope><sys_update_name>sys_ui_form_sections_0d62bd354723a1502908cde3836d439d</sys_update_name><sys_updated_by>hemanth.kumar@snc</sys_updated_by><sys_updated_on>2023-06-21 06:34:17</sys_updated_on><sys_user/><view display_value="Workspace CRM Application 0" name="workspace-crm-application-0">8754fc71ffe26110a4aad0d01438ca92</view><view_name/></sys_ui_form></sys_ui_form_sections></record_update>]]></payload>
+        <payload_hash>-660462842</payload_hash>
+        <record_name>Incident</record_name>
+        <reverted_from/>
+        <source>08d9eca147e621102908cde3836d43f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>hemanth.kumar@snc</sys_created_by>
+        <sys_created_on>2023-06-21 08:35:22</sys_created_on>
+        <sys_id>fa1e0afd4763a1502908cde3836d4384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188dd18131c0000001</sys_recorded_at>
+        <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+        <sys_updated_on>2023-06-21 08:35:22</sys_updated_on>
+        <type>Form Sections</type>
+        <update_guid>721e0afdfa63a150e7b18e14e11f7084</update_guid>
+        <update_guid_history>721e0afdfa63a150e7b18e14e11f7084:-660462842,d162bd350b23a1507b65f3c7463a9e9f:-1851325891</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>hemanth.kumar@snc</sys_created_by>
+        <sys_created_on>2023-06-21 08:35:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_form">sys_ui_form</sys_db_object>
+        <sys_id>0bb9ae1977224c7c88b668f4f7c59884</sys_id>
+        <sys_metadata>0d62bd354723a1502908cde3836d439d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>incident</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_parent display_value="Incident">c0ec2d28a9a0211076daa554cb57d963</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_scope_delete display_value="">0792609ddad7495c84516a200d8c2561</sys_scope_delete>
+        <sys_update_name>sys_ui_form_sections_0d62bd354723a1502908cde3836d439d</sys_update_name>
+        <sys_update_version display_value="sys_ui_form_sections_0d62bd354723a1502908cde3836d439d">fa1e0afd4763a1502908cde3836d4384</sys_update_version>
+        <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+        <sys_updated_on>2023-06-21 08:35:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

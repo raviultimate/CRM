@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="25abf3f047b6e9106e672782846d43c0" sys_domain="global" table="x_snc_crm_applic_1_leads" version="3" view="workspace-nextgencrm-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-13 08:38:23</sys_created_on>
+            <sys_id>c5120593471b69102908cde3836d43b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-13 08:38:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-13 08:38:23</sys_created_on>
+            <sys_id>8d120593471b69102908cde3836d43b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-13 08:38:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-13 08:38:23</sys_created_on>
+            <sys_id>01120593471b69102908cde3836d43b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-13 08:38:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-13 08:38:23</sys_created_on>
+            <sys_id>81120593471b69102908cde3836d43b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-13 08:38:23</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-13 08:38:23</sys_created_on>
+            <sys_id>05120593471b69102908cde3836d43b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-13 08:38:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-13 08:38:23</sys_created_on>
+            <sys_id>85120593471b69102908cde3836d43b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-13 08:38:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>source</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-13 08:38:23</sys_created_on>
+            <sys_id>09120593471b69102908cde3836d43b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-13 08:38:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-13 08:38:26</sys_created_on>
+            <sys_id>89120593471b69102908cde3836d43b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-13 08:38:26</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_crm_applic_1_leads</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>citizendev</sys_created_by>
+            <sys_created_on>2023-05-12 07:12:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>25abf3f047b6e9106e672782846d43c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_crm_applic_1_leads</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+            <sys_update_name>sys_ui_section_25abf3f047b6e9106e672782846d43c0</sys_update_name>
+            <sys_updated_by>citizendev</sys_updated_by>
+            <sys_updated_on>2023-05-12 07:12:56</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace NextGenCRM 0" name="workspace-nextgencrm-0">7a9b73f0eeb6e91030233c1d02c2f32e</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CRM Application">63c9eca147e621102908cde3836d436d</application>
+        <file_path/>
+        <instance_id>ac7167dddb2eedd49df22f17d496195d</instance_id>
+        <instance_name>emprmanchikanti2</instance_name>
+        <name>sys_ui_section_25abf3f047b6e9106e672782846d43c0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="25abf3f047b6e9106e672782846d43c0" sys_domain="global" table="x_snc_crm_applic_1_leads" version="3" view="workspace-nextgencrm-0"><sys_ui_element action="INSERT_OR_UPDATE"><element>first_name</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-13 08:38:23</sys_created_on><sys_id>c5120593471b69102908cde3836d43b2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-13 08:38:23</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>email</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-13 08:38:23</sys_created_on><sys_id>8d120593471b69102908cde3836d43b2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-13 08:38:23</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>phone</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-13 08:38:23</sys_created_on><sys_id>01120593471b69102908cde3836d43b3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-13 08:38:23</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-13 08:38:23</sys_created_on><sys_id>81120593471b69102908cde3836d43b3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-13 08:38:23</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>last_name</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-13 08:38:23</sys_created_on><sys_id>05120593471b69102908cde3836d43b3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-13 08:38:23</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>status</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-13 08:38:23</sys_created_on><sys_id>85120593471b69102908cde3836d43b3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-13 08:38:23</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>source</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-13 08:38:23</sys_created_on><sys_id>09120593471b69102908cde3836d43b3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-13 08:38:23</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>activity.xml</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-13 08:38:26</sys_created_on><sys_id>89120593471b69102908cde3836d43b3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter><sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="7a9b73f0eeb6e91030233c1d02c2f32e">25abf3f047b6e9106e672782846d43c0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-13 08:38:26</sys_updated_on><sys_user/><type>formatter</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_snc_crm_applic_1_leads</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>citizendev</sys_created_by><sys_created_on>2023-05-12 07:12:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>25abf3f047b6e9106e672782846d43c0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_crm_applic_1_leads</sys_name><sys_overrides/><sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package><sys_policy/><sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope><sys_update_name>sys_ui_section_25abf3f047b6e9106e672782846d43c0</sys_update_name><sys_updated_by>citizendev</sys_updated_by><sys_updated_on>2023-05-12 07:12:56</sys_updated_on><sys_user/><title>true</title><view display_value="Workspace NextGenCRM 0" name="workspace-nextgencrm-0">7a9b73f0eeb6e91030233c1d02c2f32e</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1626372214</payload_hash>
+        <record_name>Leads</record_name>
+        <reverted_from/>
+        <source>08d9eca147e621102908cde3836d43f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-13 08:38:26</sys_created_on>
+        <sys_id>fd120593471b69102908cde3836d43d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188b3e801010000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-13 08:38:26</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>751205935c1b6910aa20335ef62a99d8</update_guid>
+        <update_guid_history>751205935c1b6910aa20335ef62a99d8:1626372214,7ddb54f2abbe6150a8464ba31573273e:-2092333763,58e3b72ecffa61501a98308f1b11e0a1:-1286407353,71b150c584f6e910f09df03af8f70064:-144780265,61b150c5cbf6e9104f47af47455aa837:-814293294</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-07-09 12:54:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>4f29c9ed175a41329920da5779df6be4</sys_id>
+        <sys_metadata>25abf3f047b6e9106e672782846d43c0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_crm_applic_1_leads</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_parent display_value="Crm Applic 1 Leads">ad667ce947e621102908cde3836d43ee</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_scope_delete display_value="">0792609ddad7495c84516a200d8c2561</sys_scope_delete>
+        <sys_update_name>sys_ui_section_25abf3f047b6e9106e672782846d43c0</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_25abf3f047b6e9106e672782846d43c0">fd120593471b69102908cde3836d43d8</sys_update_version>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-07-09 12:54:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

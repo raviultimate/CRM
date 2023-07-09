@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_snc_crm_applic_1_sales_operation</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>citizendev</sys_created_by>
+        <sys_created_on>2023-05-01 15:16:36</sys_created_on>
+        <sys_id>bed0c125472a21102908cde3836d4312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_crm_applic_1_sales_operation</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>ua_table_licensing_config_bed0c125472a21102908cde3836d4312</sys_update_name>
+        <sys_updated_by>citizendev</sys_updated_by>
+        <sys_updated_on>2023-05-01 15:16:36</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>

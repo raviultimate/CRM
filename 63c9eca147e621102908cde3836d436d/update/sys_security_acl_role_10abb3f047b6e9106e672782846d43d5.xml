@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>citizendev</sys_created_by>
+        <sys_created_on>2023-05-12 07:12:52</sys_created_on>
+        <sys_id>10abb3f047b6e9106e672782846d43d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>now.nextgencrm.*.x_snc_crm_applic_1.marketing</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_security_acl display_value="now.crm-world.*">3e9b73f0beb6e9100f55c04985944d2e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_10abb3f047b6e9106e672782846d43d5</sys_update_name>
+        <sys_updated_by>citizendev</sys_updated_by>
+        <sys_updated_on>2023-05-12 07:12:52</sys_updated_on>
+        <sys_user_role display_value="x_snc_crm_applic_1.marketing" name="x_snc_crm_applic_1.marketing">44d9eca147e621102908cde3836d43f5</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

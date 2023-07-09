@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_ribbon_setting">
+    <sys_aw_ribbon_setting action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <attrs/>
+        <component display_value="CMDB Timeline">f62d039773102300ee4dd3c72bf6a741</component>
+        <experience_restricted>true</experience_restricted>
+        <is_inheritable>false</is_inheritable>
+        <name>CMDB Timeline</name>
+        <order>0</order>
+        <sys_class_name>sys_aw_ribbon_setting</sys_class_name>
+        <sys_created_by>hemanth.kumar@snc</sys_created_by>
+        <sys_created_on>2023-06-19 13:19:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9c1cf81547a321502908cde3836d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CMDB Timeline</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>sys_aw_ribbon_setting_9c1cf81547a321502908cde3836d43e3</sys_update_name>
+        <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+        <sys_updated_on>2023-06-19 13:19:58</sys_updated_on>
+        <table>x_snc_crm_applic_1_leads</table>
+        <tag>sn-cmdb-timeline-card</tag>
+        <width>2</width>
+        <workspace/>
+    </sys_aw_ribbon_setting>
+    <sys_variable_value action="delete_multiple" query="document_key=9c1cf81547a321502908cde3836d43e3"/>
+</record_update>

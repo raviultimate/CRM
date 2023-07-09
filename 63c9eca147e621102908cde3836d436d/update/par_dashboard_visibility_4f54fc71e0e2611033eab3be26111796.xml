@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_visibility">
+    <par_dashboard_visibility action="INSERT_OR_UPDATE">
+        <dashboard display_value="CRM Application">0f54fc712be261109661da3cca5dc58a</dashboard>
+        <experience display_value="CRM Application">8b54fc71f1e26110efb45e5ce0add48c</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 09:00:31</sys_created_on>
+        <sys_id>4f54fc71e0e2611033eab3be26111796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>par_dashboard_visibility_4f54fc71e0e2611033eab3be26111796</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 09:00:31</sys_updated_on>
+    </par_dashboard_visibility>
+</record_update>

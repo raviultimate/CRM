@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="7a7474b147e261102908cde3836d43bb" sys_domain="global" table="x_snc_crm_applic_1_leads" version="3" view="workspace-crm-application-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <position>0</position>
+            <sys_created_by>hemanth.kumar@snc</sys_created_by>
+            <sys_created_on>2023-06-21 06:05:40</sys_created_on>
+            <sys_id>8adba1bd47ef61502908cde3836d43fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">7a7474b147e261102908cde3836d43bb</sys_ui_section>
+            <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+            <sys_updated_on>2023-06-21 06:05:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>1</position>
+            <sys_created_by>hemanth.kumar@snc</sys_created_by>
+            <sys_created_on>2023-06-21 06:05:40</sys_created_on>
+            <sys_id>8edba1bd47ef61502908cde3836d43fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">7a7474b147e261102908cde3836d43bb</sys_ui_section>
+            <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+            <sys_updated_on>2023-06-21 06:05:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone</element>
+            <position>2</position>
+            <sys_created_by>hemanth.kumar@snc</sys_created_by>
+            <sys_created_on>2023-06-21 06:05:40</sys_created_on>
+            <sys_id>82dba1bd47ef61502908cde3836d43ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">7a7474b147e261102908cde3836d43bb</sys_ui_section>
+            <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+            <sys_updated_on>2023-06-21 06:05:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>hemanth.kumar@snc</sys_created_by>
+            <sys_created_on>2023-06-21 06:05:40</sys_created_on>
+            <sys_id>86dba1bd47ef61502908cde3836d43ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">7a7474b147e261102908cde3836d43bb</sys_ui_section>
+            <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+            <sys_updated_on>2023-06-21 06:05:40</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>4</position>
+            <sys_created_by>hemanth.kumar@snc</sys_created_by>
+            <sys_created_on>2023-06-21 06:05:40</sys_created_on>
+            <sys_id>8adba1bd47ef61502908cde3836d43ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">7a7474b147e261102908cde3836d43bb</sys_ui_section>
+            <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+            <sys_updated_on>2023-06-21 06:05:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>source</element>
+            <position>5</position>
+            <sys_created_by>hemanth.kumar@snc</sys_created_by>
+            <sys_created_on>2023-06-21 06:05:40</sys_created_on>
+            <sys_id>8edba1bd47ef61502908cde3836d43ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">7a7474b147e261102908cde3836d43bb</sys_ui_section>
+            <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+            <sys_updated_on>2023-06-21 06:05:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>6</position>
+            <sys_created_by>hemanth.kumar@snc</sys_created_by>
+            <sys_created_on>2023-06-21 06:05:40</sys_created_on>
+            <sys_id>82dbe1bd47ef61502908cde3836d4300</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_crm_applic_1_leads" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">7a7474b147e261102908cde3836d43bb</sys_ui_section>
+            <sys_updated_by>hemanth.kumar@snc</sys_updated_by>
+            <sys_updated_on>2023-06-21 06:05:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_crm_applic_1_leads</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+            <sys_created_on>2023-05-02 09:01:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7a7474b147e261102908cde3836d43bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_crm_applic_1_leads</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+            <sys_update_name>sys_ui_section_7a7474b147e261102908cde3836d43bb</sys_update_name>
+            <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+            <sys_updated_on>2023-05-02 09:01:01</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace CRM Application 0" name="workspace-crm-application-0">8754fc71ffe26110a4aad0d01438ca92</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

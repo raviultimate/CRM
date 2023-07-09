@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">4f54fc7116e2611094c48e14a3d20a8c</canvas>
+        <component display_value="now-heading">3a64f550256090d9578ede76158e899c</component>
+        <component_props>{"variant":"header-secondary","label":"My Work","wontWrap":false,"hasNoMargin":false,"level":"1"}</component_props>
+        <h>3</h>
+        <name/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 09:00:32</sys_created_on>
+        <sys_id>9f54fc71e2e2611017e2fe3bf49d5f9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>par_dashboard_widget_9f54fc71e2e2611017e2fe3bf49d5f9e</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 09:00:32</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <x>0</x>
+        <y>12</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CRM Application">63c9eca147e621102908cde3836d436d</application>
+        <file_path/>
+        <instance_id>ac7167dddb2eedd49df22f17d496195d</instance_id>
+        <instance_name>emprmanchikanti2</instance_name>
+        <name>par_dashboard_widget_9f54fc71e2e2611017e2fe3bf49d5f9e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">4f54fc7116e2611094c48e14a3d20a8c</canvas><component display_value="now-heading">3a64f550256090d9578ede76158e899c</component><component_props>{"variant":"header-secondary","label":"My Work","wontWrap":false,"hasNoMargin":false,"level":"1"}</component_props><h>3</h><name/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>raviteja.manchikanti@snc</sys_created_by><sys_created_on>2023-05-02 09:00:32</sys_created_on><sys_id>9f54fc71e2e2611017e2fe3bf49d5f9e</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package><sys_policy/><sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope><sys_update_name>par_dashboard_widget_9f54fc71e2e2611017e2fe3bf49d5f9e</sys_update_name><sys_updated_by>raviteja.manchikanti@snc</sys_updated_by><sys_updated_on>2023-05-02 09:00:32</sys_updated_on><visualization/><w>48</w><x>0</x><y>12</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-1251336428</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source/>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-03 11:50:32</sys_created_on>
+        <sys_id>fbd42e4247a6a1106e672782846d434c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187e173243a0000001</sys_recorded_at>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-03 11:50:32</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>bbd42e42fca6a1100b9fd18419d74b4c</update_guid>
+        <update_guid_history>bbd42e42fca6a1100b9fd18419d74b4c:-1251336428</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c0e42e4247a6a1106e672782846d434e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-03 11:50:32</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>011a7a8cfae64e8a92deae30e0d98299</sys_id>
+        <sys_metadata>9f54fc71e2e2611017e2fe3bf49d5f9e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_scope_delete display_value="">0792609ddad7495c84516a200d8c2561</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_9f54fc71e2e2611017e2fe3bf49d5f9e</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_9f54fc71e2e2611017e2fe3bf49d5f9e">fbd42e4247a6a1106e672782846d434c</sys_update_version>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-03 11:50:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

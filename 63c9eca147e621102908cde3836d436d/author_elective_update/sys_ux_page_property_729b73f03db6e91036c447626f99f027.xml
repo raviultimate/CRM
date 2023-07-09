@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>Ribbon Config ID</description>
+        <name>ribbonConfigId</name>
+        <page display_value="">fe9b73f08ab6e91030ce32bd654d9238</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>citizendev</sys_created_by>
+        <sys_created_on>2023-05-12 07:12:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>729b73f03db6e91036c447626f99f027</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ribbonConfigId</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>sys_ux_page_property_729b73f03db6e91036c447626f99f027</sys_update_name>
+        <sys_updated_by>citizendev</sys_updated_by>
+        <sys_updated_on>2023-05-12 07:12:48</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_snc_crm_applic_1.fe9b73f08ab6e91030ce32bd654d9238.root.ribbonConfigId</unique_name>
+        <value>fa9b73f09cb6e91072aee7d0fbeaf626</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CRM Application">63c9eca147e621102908cde3836d436d</application>
+        <file_path/>
+        <instance_id>ac7167dddb2eedd49df22f17d496195d</instance_id>
+        <instance_name>emprmanchikanti2</instance_name>
+        <name>sys_ux_page_property_729b73f03db6e91036c447626f99f027</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>Ribbon Config ID</description><name>ribbonConfigId</name><page display_value="">fe9b73f08ab6e91030ce32bd654d9238</page><required_translations/><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>citizendev</sys_created_by><sys_created_on>2023-05-12 07:12:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>729b73f03db6e91036c447626f99f027</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ribbonConfigId</sys_name><sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package><sys_policy/><sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope><sys_update_name>sys_ux_page_property_729b73f03db6e91036c447626f99f027</sys_update_name><sys_updated_by>citizendev</sys_updated_by><sys_updated_on>2023-05-12 07:12:48</sys_updated_on><type>string</type><unique_name>x_snc_crm_applic_1.fe9b73f08ab6e91030ce32bd654d9238.root.ribbonConfigId</unique_name><value>fa9b73f09cb6e91072aee7d0fbeaf626</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>1008233632</payload_hash>
+        <record_name>ribbonConfigId</record_name>
+        <reverted_from/>
+        <source/>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-13 06:28:47</sys_created_on>
+        <sys_id>882bbcdd4732e9102908cde3836d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18813cc29350000001</sys_recorded_at>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:28:47</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>482bbcdd7c32e91068523cdc2200283c</update_guid>
+        <update_guid_history>482bbcdd7c32e91068523cdc2200283c:1008233632</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-13 06:28:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>332cecc9401a4378a0ca6c68f5363b19</sys_id>
+        <sys_metadata>729b73f03db6e91036c447626f99f027</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ribbonConfigId</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_scope_delete display_value="">0792609ddad7495c84516a200d8c2561</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_729b73f03db6e91036c447626f99f027</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_729b73f03db6e91036c447626f99f027">882bbcdd4732e9102908cde3836d433c</sys_update_version>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:28:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

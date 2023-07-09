@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_search_context_config_search_source">
+    <m2m_search_context_config_search_source action="INSERT_OR_UPDATE">
+        <order>500</order>
+        <search_context_config display_value="NextGenCRM - Workspace Search">ba9b73f065b6e910c31944ac88ecda2f</search_context_config>
+        <source display_value="NextGenCRM - x_snc_crm_applic_1_account">2cabb3f047b6e9106e672782846d43ef</source>
+        <sys_class_name>m2m_search_context_config_search_source</sys_class_name>
+        <sys_created_by>citizendev</sys_created_by>
+        <sys_created_on>2023-05-12 07:12:53</sys_created_on>
+        <sys_id>ecabb3f047b6e9106e672782846d43f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>m2m_search_context_config_search_source_ecabb3f047b6e9106e672782846d43f1</sys_update_name>
+        <sys_updated_by>citizendev</sys_updated_by>
+        <sys_updated_on>2023-05-12 07:12:53</sys_updated_on>
+    </m2m_search_context_config_search_source>
+</record_update>

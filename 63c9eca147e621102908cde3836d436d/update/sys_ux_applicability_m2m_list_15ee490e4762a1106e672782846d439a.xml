@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Audience for list Closed Incomplete">bf3d3ad64722e1102908cde3836d432a</applicability>
+        <list display_value="Closed Incomplete">15ee450e4762a1106e672782846d43b4</list>
+        <order>0</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>citizendev</sys_created_by>
+        <sys_created_on>2023-05-03 05:34:53</sys_created_on>
+        <sys_id>15ee490e4762a1106e672782846d439a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_15ee490e4762a1106e672782846d439a</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 08:15:30</sys_updated_on>
+    </sys_ux_applicability_m2m_list>
+</record_update>

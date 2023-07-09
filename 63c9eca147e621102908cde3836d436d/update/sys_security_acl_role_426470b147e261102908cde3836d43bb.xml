@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 09:00:41</sys_created_on>
+        <sys_id>426470b147e261102908cde3836d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>now.crm-application.*.x_snc_crm_applic_1.sales</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_security_acl display_value="now.crm-application.*">9f54fc719ee261103113fb627f5e319b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_426470b147e261102908cde3836d43bb</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 09:00:41</sys_updated_on>
+        <sys_user_role display_value="x_snc_crm_applic_1.sales" name="x_snc_crm_applic_1.sales">48d9eca147e621102908cde3836d43f1</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

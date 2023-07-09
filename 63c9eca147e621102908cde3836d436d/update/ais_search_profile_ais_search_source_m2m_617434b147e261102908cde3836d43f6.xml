@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <profile display_value="crm-application search profile">5f54fc710ae261104c713c0809a7549c</profile>
+        <search_source display_value="Products">ed7434b147e261102908cde3836d43f3</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 09:00:55</sys_created_on>
+        <sys_id>617434b147e261102908cde3836d43f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>crm-application search profile.Products</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_617434b147e261102908cde3836d43f6</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 09:00:55</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

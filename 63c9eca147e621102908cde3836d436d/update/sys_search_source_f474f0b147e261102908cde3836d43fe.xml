@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_source">
+    <sys_search_source action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_crm_applic_1_opportunity">active=true</condition>
+        <group/>
+        <name>CRM Application - x_snc_crm_applic_1_opportunity</name>
+        <roles/>
+        <source_table>x_snc_crm_applic_1_opportunity</source_table>
+        <sys_class_name>sys_search_source</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-02 09:00:52</sys_created_on>
+        <sys_id>f474f0b147e261102908cde3836d43fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CRM Application - x_snc_crm_applic_1_opportunity</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>sys_search_source_f474f0b147e261102908cde3836d43fe</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-02 09:00:52</sys_updated_on>
+    </sys_search_source>
+    <sys_translated_text action="delete_multiple" query="documentkey=f474f0b147e261102908cde3836d43fe"/>
+</record_update>

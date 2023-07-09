@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_snc_crm_applic_1_sales_operation" version="2" view="workspace-crm-application-0">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Sales Operation - Workspace CRM Application 0" name="x_snc_crm_applic_1_sales_operation" related_list="NULL" sys_domain="global" view="8754fc71ffe26110a4aad0d01438ca92">d44b36564722e1102908cde3836d4376</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_snc_crm_applic_1_opportunity.sales_op</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+            <sys_created_on>2023-05-04 08:06:48</sys_created_on>
+            <sys_id>dc4b36564722e1102908cde3836d4377</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+            <sys_updated_on>2023-05-04 08:06:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Sales Operation - Workspace CRM Application 0</calculated_name>
+            <filter/>
+            <name>x_snc_crm_applic_1_sales_operation</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+            <sys_created_on>2023-05-04 08:06:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d44b36564722e1102908cde3836d4376</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Sales Operation - Workspace CRM Application 0</sys_name>
+            <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+            <sys_update_name>sys_ui_related_x_snc_crm_applic_1_sales_operation_workspace-crm-application-0</sys_update_name>
+            <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+            <sys_updated_on>2023-05-04 08:06:48</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace CRM Application 0" name="workspace-crm-application-0">8754fc71ffe26110a4aad0d01438ca92</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

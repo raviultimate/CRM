@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="DELETE">
+        <active>true</active>
+        <admin_panel>369b73f06db6e910c5652a3a9c5ce339</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes/>
+        <page/>
+        <parent_app display_value="Unified Navigation app shell">c86a62e2c7022010099a308dc7c26022</parent_app>
+        <path>crm-world</path>
+        <root_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>citizendev</sys_created_by>
+        <sys_created_on>2023-05-12 07:12:47</sys_created_on>
+        <sys_id>fe9b73f08ab6e91030ce32bd654d9238</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>NextGenCRM</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>sys_ux_page_registry_fe9b73f08ab6e91030ce32bd654d9238</sys_update_name>
+        <sys_updated_by>citizendev</sys_updated_by>
+        <sys_updated_on>2023-05-12 08:45:50</sys_updated_on>
+        <title>NextGenCRM</title>
+    </sys_ux_page_registry>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CRM Application">63c9eca147e621102908cde3836d436d</application>
+        <file_path/>
+        <instance_id>ac7167dddb2eedd49df22f17d496195d</instance_id>
+        <instance_name>emprmanchikanti2</instance_name>
+        <name>sys_ux_page_registry_fe9b73f08ab6e91030ce32bd654d9238</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry"><sys_ux_page_registry action="INSERT_OR_UPDATE"><active>true</active><admin_panel>369b73f06db6e910c5652a3a9c5ce339</admin_panel><admin_panel_table>sys_ux_app_config</admin_panel_table><auth_routes/><page/><parent_app display_value="Unified Navigation app shell">c86a62e2c7022010099a308dc7c26022</parent_app><path>crm-world</path><root_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</root_macroponent><sys_class_name>sys_ux_page_registry</sys_class_name><sys_created_by>citizendev</sys_created_by><sys_created_on>2023-05-12 07:12:47</sys_created_on><sys_id>fe9b73f08ab6e91030ce32bd654d9238</sys_id><sys_mod_count>1</sys_mod_count><sys_name>NextGenCRM</sys_name><sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package><sys_policy/><sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope><sys_update_name>sys_ux_page_registry_fe9b73f08ab6e91030ce32bd654d9238</sys_update_name><sys_updated_by>citizendev</sys_updated_by><sys_updated_on>2023-05-12 08:45:50</sys_updated_on><title>NextGenCRM</title></sys_ux_page_registry></record_update>]]></payload>
+        <payload_hash>1563457437</payload_hash>
+        <record_name>NextGenCRM</record_name>
+        <reverted_from/>
+        <source>08d9eca147e621102908cde3836d43f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>citizendev</sys_created_by>
+        <sys_created_on>2023-05-12 08:45:50</sys_created_on>
+        <sys_id>d6e0d04547f6e9106e672782846d43c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1880f2349b20000001</sys_recorded_at>
+        <sys_updated_by>citizendev</sys_updated_by>
+        <sys_updated_on>2023-05-12 08:45:50</sys_updated_on>
+        <type>UX Application</type>
+        <update_guid>dee0d045daf6e91009bbe7c4a1ca6dc7</update_guid>
+        <update_guid_history>dee0d045daf6e91009bbe7c4a1ca6dc7:1563457437,1ae0d045c8f6e910faf6cf1308d0f5c6:716156047</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-13 06:28:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_registry">sys_ux_page_registry</sys_db_object>
+        <sys_id>85bb00c9845548ce893c93daeca2dc19</sys_id>
+        <sys_metadata>fe9b73f08ab6e91030ce32bd654d9238</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NextGenCRM</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_scope_delete display_value="">0792609ddad7495c84516a200d8c2561</sys_scope_delete>
+        <sys_update_name>sys_ux_page_registry_fe9b73f08ab6e91030ce32bd654d9238</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_registry_fe9b73f08ab6e91030ce32bd654d9238">d6e0d04547f6e9106e672782846d43c8</sys_update_version>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-13 06:28:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

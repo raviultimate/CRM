@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_permission">
+    <par_dashboard_permission action="DELETE">
+        <can_read>true</can_read>
+        <can_share>false</can_share>
+        <can_write>true</can_write>
+        <dashboard display_value="CRM Application">0f54fc712be261109661da3cca5dc58a</dashboard>
+        <group display_value="App Engine Studio Users" name="App Engine Studio Users">72910dd8779050108a370870a81061a9</group>
+        <role/>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-04 07:01:13</sys_created_on>
+        <sys_id>af3ca2d647eea1102908cde3836d4387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0f54fc712be261109661da3cca5dc58a</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_update_name>par_dashboard_permission_af3ca2d647eea1102908cde3836d4387</sys_update_name>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 07:01:13</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CRM Application">63c9eca147e621102908cde3836d436d</application>
+        <file_path/>
+        <instance_id>ac7167dddb2eedd49df22f17d496195d</instance_id>
+        <instance_name>emprmanchikanti2</instance_name>
+        <name>par_dashboard_permission_af3ca2d647eea1102908cde3836d4387</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_permission"><par_dashboard_permission action="INSERT_OR_UPDATE"><can_read>true</can_read><can_share>false</can_share><can_write>true</can_write><dashboard display_value="CRM Application">0f54fc712be261109661da3cca5dc58a</dashboard><group display_value="App Engine Studio Users" name="App Engine Studio Users">72910dd8779050108a370870a81061a9</group><role/><sys_class_name>par_dashboard_permission</sys_class_name><sys_created_by>raviteja.manchikanti@snc</sys_created_by><sys_created_on>2023-05-04 07:01:13</sys_created_on><sys_id>af3ca2d647eea1102908cde3836d4387</sys_id><sys_mod_count>0</sys_mod_count><sys_name>0f54fc712be261109661da3cca5dc58a</sys_name><sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package><sys_policy/><sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope><sys_update_name>par_dashboard_permission_af3ca2d647eea1102908cde3836d4387</sys_update_name><sys_updated_by>raviteja.manchikanti@snc</sys_updated_by><sys_updated_on>2023-05-04 07:01:13</sys_updated_on><user/></par_dashboard_permission></record_update>]]></payload>
+        <payload_hash>994270780</payload_hash>
+        <record_name>0f54fc712be261109661da3cca5dc58a</record_name>
+        <reverted_from/>
+        <source>08d9eca147e621102908cde3836d43f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-04 07:01:13</sys_created_on>
+        <sys_id>233ca2d647eea1102908cde3836d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187e590a1db0000001</sys_recorded_at>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 07:01:13</sys_updated_on>
+        <type>PAR Dashboard Permission</type>
+        <update_guid>e33ca2d63aeea110b1d3050c1ee5078b</update_guid>
+        <update_guid_history>e33ca2d63aeea110b1d3050c1ee5078b:994270780</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="CRM Application">a9edaa1a47eea1102908cde3836d43a1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>raviteja.manchikanti@snc</sys_created_by>
+        <sys_created_on>2023-05-04 07:08:27</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_permission">par_dashboard_permission</sys_db_object>
+        <sys_id>2eb29decfff24fa39cc7e0ffd2853601</sys_id>
+        <sys_metadata>af3ca2d647eea1102908cde3836d4387</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0f54fc712be261109661da3cca5dc58a</sys_name>
+        <sys_package display_value="CRM Application" source="x_snc_crm_applic_1">63c9eca147e621102908cde3836d436d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CRM Application">63c9eca147e621102908cde3836d436d</sys_scope>
+        <sys_scope_delete display_value="">0792609ddad7495c84516a200d8c2561</sys_scope_delete>
+        <sys_update_name>par_dashboard_permission_af3ca2d647eea1102908cde3836d4387</sys_update_name>
+        <sys_update_version display_value="par_dashboard_permission_af3ca2d647eea1102908cde3836d4387">233ca2d647eea1102908cde3836d438c</sys_update_version>
+        <sys_updated_by>raviteja.manchikanti@snc</sys_updated_by>
+        <sys_updated_on>2023-05-04 07:08:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
